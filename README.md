@@ -6,7 +6,6 @@ It also provides extra features for readers who are using the README as instruct
 
 to do list:
 
-- [ ] add to github
 - [ ] redo chrome extension tutorial from scratch
 - [ ] get a working html popup for the icon in the top right
 - [ ] column width options
