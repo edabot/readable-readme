@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
     console.log("clicked3!");
     chrome.tabs.executeScript({
-       code: 'document.body.style.backgroundColor="red"'
+       code: 'document.body.style.backgroundColor="red", document.body.style.color="red"'
      });
   }, false);
 }, false);
