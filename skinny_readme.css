@@ -1,7 +1,17 @@
-.readme {
-  width: 550px;
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    max-width: 550px;
+}
+
+.markdown-body p img {
+    max-width: 900px !important;
+}
+
+code {
+    border: 1px solid #ddd;
 }
 
 .highlight {
-  width: 700px;
+    width: 700px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
 }
