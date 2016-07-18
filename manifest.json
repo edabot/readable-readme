@@ -26,7 +26,8 @@
   ],
 
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "tabs",
+  "http://*/*",
+  "https://*/*"
+]
 }
