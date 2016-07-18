@@ -6,11 +6,10 @@ It also provides extra features for readers who are using the README as instruct
 
 to do list:
 
-- [ ] redo chrome extension tutorial from scratch
-- [ ] get a working html popup for the icon in the top right
+- [x] get a working html popup for the icon in the top right
 - [ ] column width options
 - [ ] column location options (left/center)
-- [ ] update icon with catopus with glasses
+- [x] update icon with octocat with glasses
 - [ ] analysis of current readme with problems clearly laid out
 - [ ] before/after images (to do at end)
 - [ ] how wide does code need to be? char width
