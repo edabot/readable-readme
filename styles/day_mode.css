@@ -1,0 +1,17 @@
+.markdown-body {
+  background-color: white !important;
+  color: #333 !important;
+}
+
+body {
+  background-color: #FAFAFA !important;
+}
+
+code {
+  background-color: #fff !important;
+  border: none;
+}
+
+pre {
+  background-color: #fff !important;
+}
