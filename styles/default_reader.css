@@ -1,7 +1,7 @@
-.markdown-body p, .markdown-body h2, .markdown-body blockquote,
+.markdown-body p, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body blockquote,
 .markdown-body ul, .markdown-body ol, .markdown-body dl,
 .markdown-body table {
-    max-width: 550px;
+    width: 550px;
 }
 
 .markdown-body {
@@ -24,4 +24,9 @@ code {
 
 .markdown-body  pre {
   max-width: 700px;
+}
+
+.entry-content {
+  display: flex;
+  flex-direction: column;
 }

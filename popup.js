@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, false);
 
+  var checkLeftAlignButton = document.getElementById('left-align');
+  checkLeftAlignButton.addEventListener('click', function() {
+    console.log("clicked center");
+    chrome.tabs.insertCSS(null, {file: 'styles/left_align.css'}, function() {
+        console.log('Its loaded!');
+    });
+  }, false);
+
   var checkCenterButton = document.getElementById('center');
   checkCenterButton.addEventListener('click', function() {
     console.log("clicked center");
