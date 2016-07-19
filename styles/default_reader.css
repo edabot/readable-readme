@@ -1,4 +1,6 @@
-.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table {
+.markdown-body p, .markdown-body h2, .markdown-body blockquote,
+.markdown-body ul, .markdown-body ol, .markdown-body dl,
+.markdown-body table {
     max-width: 550px;
 }
 
