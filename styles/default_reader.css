@@ -18,13 +18,15 @@ code {
 }
 
 .highlight {
-    max-width: 700px;
+    width: 700px;
     background-color: #fafafa;
     border: 1px solid #ddd;
 }
 
 .markdown-body  pre {
-  max-width: 700px;
+  width: 700px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
 }
 
 .entry-content {
