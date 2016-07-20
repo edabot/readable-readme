@@ -1,5 +1,5 @@
 .markdown-body {
-  background-color: white !important;
+  background-color: #fafafa !important;
   color: #333 !important;
 }
 
@@ -8,8 +8,8 @@ body {
 }
 
 code {
-  background-color: #fff !important;
-  border: none;
+  background-color: #f0f0f0 !important;
+  border: 1px solid #ddd !important;
 }
 
 pre {

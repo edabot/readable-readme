@@ -1,0 +1,32 @@
+body {
+  background-color: #fafafa;
+  width: 190px;
+}
+
+button {
+  padding: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#bigger-font {
+  font-size: 13px;
+}
+
+#biggest-font {
+  font-size: 15px;
+}
+
+#serif {
+  font-family: Georgia, serif;
+}
+
+#night-mode {
+  background-color: black;
+  color: #bbb;
+}
