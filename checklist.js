@@ -6,11 +6,11 @@ for (var i = 0; i < paragraphs.length; i++) {
   paragraphs[i].addEventListener("click", function() {
     this.classList.toggle("faded");
   });
-  paragraphs[i].addEventListener("dragend", function() {
-    this.classList.toggle("faded");
-    console.log("dragged");
-  });
+  if (paragraphs[i].innerHTML.includes("img src")) {
+    paragraphs[i].classList.toggle("image-container");
+  }
 }
+
 for (var i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener("click", function() {
     this.classList.toggle("faded");

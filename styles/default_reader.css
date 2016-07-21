@@ -9,9 +9,7 @@
     background-color: #fafafa !important;
 }
 
-.markdown-body p img {
-    max-width: 900px !important;
-}
+
 
 code {
     border: 1px solid #ddd;
@@ -36,4 +34,14 @@ code {
 
 .faded {
   opacity: .4;
+}
+
+.image-container {
+  width: 100% !important;
+  display:inline-block;
+}
+
+.image-container img {
+  display:block;
+  margin-left: 0;
 }

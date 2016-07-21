@@ -3,12 +3,12 @@
 
   "name": "Readable README",
   "description": "This extension improves the readability of markdown on Github",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "browser_action": {
     "default_title": "Readable README",
     "default_popup": "popup.html",
-    "default_title": "Click here!"
+    "default_title": "Click here for options"
 
   },
 
