@@ -1,3 +1,8 @@
 .entry-content {
   align-items: flex-start;
 }
+
+.image-container img {
+  display: initial;
+  margin: auto;
+}

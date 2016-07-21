@@ -23,3 +23,7 @@ for (var i = 0; i < codeBlocks.length; i++) {
     this.classList.toggle("faded");
   });
 }
+// 
+// markdown[0].innerHTML.replace('</h2>', '</h2><div class="collapsible">');
+// markdown[0].innerHTML.replace('<h2>', '</div><h2>');
+// markdown[0].innerHTML = '<div>' + markdown[0].innerHTML + '</div>';
