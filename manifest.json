@@ -21,13 +21,14 @@
   "content_scripts": [
     {
       "matches": ["*://github.com/*"],
-      "css": ["styles/default_reader.css"]
+      "css": ["styles/default_reader.css"],
+      "js": ["checklist.js"]
     }
   ],
 
   "permissions": [
-  "tabs",
-  "http://*/*",
-  "https://*/*"
-]
+    "storage",
+    "tabs",
+    "*://github.com/*"
+  ]
 }

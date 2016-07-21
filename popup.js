@@ -1,7 +1,3 @@
-var blackcss = 'document.body.style.backgroundColor="black", document.body.style.color="black"'
-var redcss = 'document.body.style.backgroundColor="red", document.body.style.color="red"'
-// var testcss = 'article.style.color="red"'
-
 document.addEventListener('DOMContentLoaded', function() {
   var checkNormalButton = document.getElementById('normal-font');
   checkNormalButton.addEventListener('click', function() {
