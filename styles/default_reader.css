@@ -33,3 +33,7 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.faded {
+  opacity: .4;
+}
