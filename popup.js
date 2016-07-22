@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   var checkNormalButton = document.getElementById('normal-font');
   checkNormalButton.addEventListener('click', function() {

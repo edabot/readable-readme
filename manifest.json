@@ -25,9 +25,13 @@
       "js": ["checklist.js"]
     }
   ],
+  "background": {
+  "scripts": ["background.js"]
+},
 
   "permissions": [
     "tabs",
+    "storage",
     "*://github.com/*"
   ]
 }
