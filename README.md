@@ -13,9 +13,9 @@ to do list:
 - [ ] analysis of current readme with problems clearly laid out
 - [ ] before/after images (to do at end)
 - [ ] how wide does code need to be? char width
-- [ ] night mode (light gray on dark gray)
+- [x] night mode (light gray on dark gray)
 - [x] Medium mode (sans serif headers, serif text)
-- [ ] convert `li`s to `div`s with on/off states
-- [ ] convert `p`s to on/off
+- [x] convert `li`s to `div`s with on/off states
+- [x] convert `p`s to on/off
 - [ ] convert all sentences to on/off
-- [ ] ensure `img`s are handled properly
+- [x] ensure `img`s are handled properly
