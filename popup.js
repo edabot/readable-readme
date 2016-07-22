@@ -2,6 +2,7 @@ var state = {};
 
 chrome.storage.sync.get('state', function(items) {
   state = items['state'];
+
   if (state['fontSize'] === "normal") {
     chrome.tabs.insertCSS(null, {file: 'styles/16px_font.css'}, function() {
     });
@@ -28,7 +29,6 @@ chrome.storage.sync.get('state', function(items) {
   };
 
 });
-
 
 
 document.addEventListener('DOMContentLoaded', function() {
