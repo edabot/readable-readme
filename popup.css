@@ -4,9 +4,31 @@ body {
 }
 
 button {
-  padding: 8px;
-  font-weight: bolder;
-  cursor: pointer;
+	background-color:#eae0c2;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 4px;
+  height: 30px;
+  width: 90px;
+	text-decoration:none;
+  margin-bottom: 2px;
+  opacity: .4;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button.selected {
+  opacity: 1;
 }
 
 h3 {
@@ -16,9 +38,11 @@ h3 {
 
 #bigger-font {
   font-size: 13px;
+  padding-top:5px;
 }
 
 #biggest-font {
+  padding-top:4px;
   font-size: 15px;
 }
 

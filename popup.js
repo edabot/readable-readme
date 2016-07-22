@@ -1,34 +1,4 @@
-var state = {};
 
-chrome.storage.sync.get('state', function(items) {
-  state = items['state'];
-
-  if (state['fontSize'] === "normal") {
-    chrome.tabs.insertCSS(null, {file: 'styles/16px_font.css'}, function() {
-    });
-  };
-
-  if (state['fontSize'] === "huge") {
-    chrome.tabs.insertCSS(null, {file: 'styles/21px_font.css'}, function() {
-    });
-  };
-
-  if (state['fontStyle'] === "serif") {
-    chrome.tabs.insertCSS(null, {file: 'styles/serif.css'}, function() {
-    });
-  };
-
-  if (state['align'] === "center") {
-    chrome.tabs.insertCSS(null, {file: 'styles/center.css'}, function() {
-    });
-  };
-
-  if (state['mode'] === "night") {
-    chrome.tabs.insertCSS(null, {file: 'styles/night_mode.css'}, function() {
-    });
-  };
-
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fontSize'] = 'normal';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkNormalButton.classList.add('selected');
+    checkBigFontButton.classList.remove('selected');
+    checkBiggestFontButton.classList.remove('selected');
   }, false);
 
   var checkBigFontButton = document.getElementById('bigger-font');
@@ -48,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fontSize'] = 'bigger';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkNormalButton.classList.remove('selected');
+    checkBigFontButton.classList.add('selected');
+    checkBiggestFontButton.classList.remove('selected');
   }, false);
 
   var checkBiggestFontButton = document.getElementById('biggest-font');
@@ -57,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fontSize'] = 'huge';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkNormalButton.classList.remove('selected');
+    checkBigFontButton.classList.remove('selected');
+    checkBiggestFontButton.classList.add('selected');
   }, false);
 
   var checkSansSerifButton = document.getElementById('sans-serif');
@@ -66,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fontStyle'] = 'sans-serif';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkSansSerifButton.classList.add('selected');
+    checkSerifButton.classList.remove('selected');
   }, false);
 
   var checkSerifButton = document.getElementById('serif');
@@ -75,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fontStyle'] = 'serif';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkSansSerifButton.classList.remove('selected');
+    checkSerifButton.classList.add('selected');
   }, false);
 
   var checkLeftAlignButton = document.getElementById('left-align');
@@ -84,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['align'] = 'left';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkLeftAlignButton.classList.add('selected');
+    checkCenterButton.classList.remove('selected');
   }, false);
 
   var checkCenterButton = document.getElementById('center');
@@ -93,6 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['align'] = 'center';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkLeftAlignButton.classList.remove('selected');
+    checkCenterButton.classList.add('selected');
   }, false);
 
   var checkDayModeButton = document.getElementById('day-mode');
@@ -102,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['mode'] = 'day';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkDayModeButton.classList.add('selected');
+    checkNightModeButton.classList.remove('selected');
   }, false);
 
   var checkNightModeButton = document.getElementById('night-mode');
@@ -111,6 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['mode'] = 'night';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkDayModeButton.classList.remove('selected');
+    checkNightModeButton.classList.add('selected');
   }, false);
 
   var checkNonFadingButton = document.getElementById('non-fading');
@@ -120,6 +111,8 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fading'] = 'non-fading';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkNonFadingButton.classList.add('selected');
+    checkFadingButton.classList.remove('selected');
   }, false);
 
   var checkFadingButton = document.getElementById('fading');
@@ -129,6 +122,58 @@ document.addEventListener('DOMContentLoaded', function() {
     state['fading'] = 'fading';
     chrome.storage.sync.set({'state': state}, function() {
     });
+    checkNonFadingButton.classList.remove('selected');
+    checkFadingButton.classList.add('selected');
   }, false);
 
+
+
+
+  var state = {};
+
+  chrome.storage.sync.get('state', function(items) {
+    state = items['state'];
+
+    if (state['fontSize'] === "normal") {
+      chrome.tabs.insertCSS(null, {file: 'styles/16px_font.css'}, function() {
+      });
+      checkNormalButton.classList.add('selected');
+      checkBigFontButton.classList.remove('selected');
+    };
+
+    if (state['fontSize'] === "huge") {
+      chrome.tabs.insertCSS(null, {file: 'styles/21px_font.css'}, function() {
+      });
+      checkBigFontButton.classList.remove('selected');
+      checkBiggestFontButton.classList.add('selected');
+    };
+
+    if (state['fontStyle'] === "serif") {
+      chrome.tabs.insertCSS(null, {file: 'styles/serif.css'}, function() {
+      });
+      checkSansSerifButton.classList.remove('selected');
+      checkSerifButton.classList.add('selected');
+    };
+
+    if (state['align'] === "center") {
+      chrome.tabs.insertCSS(null, {file: 'styles/center.css'}, function() {
+      });
+      checkLeftAlignButton.classList.remove('selected');
+      checkCenterButton.classList.add('selected');
+    };
+
+    if (state['mode'] === "night") {
+      chrome.tabs.insertCSS(null, {file: 'styles/night_mode.css'}, function() {
+      });
+      checkDayModeButton.classList.remove('selected');
+      checkNightModeButton.classList.add('selected');
+    };
+
+    if (state['fading'] === "fading") {
+      chrome.tabs.insertCSS(null, {file: 'styles/fading.css'}, function() { });
+      checkNonFadingButton.classList.remove('selected');
+      checkFadingButton.classList.add('selected');
+    };
+
+  });
 }, false);
