@@ -1,7 +1,7 @@
-var markdown = document.getElementsByClassName('markdown-body');
-var paragraphs = markdown[0].getElementsByTagName('p');
-var listItems = markdown[0].getElementsByTagName('li');
-var codeBlocks = markdown[0].getElementsByClassName('highlight');
+var markdown = document.getElementsByClassName('markdown-body')[0];
+var paragraphs = markdown.getElementsByTagName('p');
+var listItems = markdown.getElementsByTagName('li');
+var codeBlocks = markdown.getElementsByClassName('highlight');
 
 for (var i = 0; i < paragraphs.length; i++) {
   paragraphs[i].addEventListener("click", function() {
@@ -23,7 +23,3 @@ for (var i = 0; i < codeBlocks.length; i++) {
     this.classList.toggle("faded");
   });
 }
-// 
-// markdown[0].innerHTML.replace('</h2>', '</h2><div class="collapsible">');
-// markdown[0].innerHTML.replace('<h2>', '</div><h2>');
-// markdown[0].innerHTML = '<div>' + markdown[0].innerHTML + '</div>';
