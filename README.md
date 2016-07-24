@@ -2,6 +2,8 @@
 
 Readable Readme is a Chrome extension that makes it easier to read README files on gitHub. The text is put into a narrower column for shorter lines and less eye strain.
 
+Readable Readme is available in the [Chrome Store](https://chrome.google.com/webstore/detail/readable-readme/jaijkgnbchjbgipahcdkfniijnccbeim)
+
 The options for viewing are accessed from the popup.html accessed on the toolbar.
 
 Options:

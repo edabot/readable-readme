@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Readable README",
+  "name": "GitReader",
   "description": "This extension improves the readability of markdown on Github",
   "version": "1.0.3",
 
